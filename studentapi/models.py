@@ -9,6 +9,9 @@ class Student(models.Model):
     email = models.CharField(max_length=55)
     mobile = models.CharField(max_length=15)
 
+    def __str__(self):
+        return self.fullname
+
     # Create /Insert / Add -POST
     # Retrive / Fetch - GET
     # Update / Edit - PUT
